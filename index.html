@@ -1,0 +1,1356 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Primary SEO -->
+  <title>Alen Jofi — Local Business Website Designer in Kerala</title>
+  <meta name="description" content="Alen Jofi builds conversion-focused websites for Indian local businesses from ₹5,500. Mobile-first, SEO-ready, and delivered in 48 hours. WhatsApp to start." />
+  <meta name="keywords" content="website designer for local businesses in Kerala, affordable website design India, local business website Kerala, dentist website designer India, cafe website designer Kerala, ₹5500 website design India, mobile-first website small business" />
+  <link rel="canonical" href="https://alenjofi.in/" />
+
+  <!-- Open Graph (critical for WhatsApp preview) -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Alen Jofi — Local Business Website Designer in Kerala" />
+  <meta property="og:description" content="Conversion-focused, mobile-first websites for Indian local businesses — delivered in 48 hours, starting at ₹5,500." />
+  <meta property="og:image" content="https://alenjofi.in/og-image.webp" />
+  <meta property="og:url" content="https://alenjofi.in/" />
+  <meta property="og:site_name" content="Alen Jofi — Web Designer Kerala" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Alen Jofi — Local Business Website Designer in Kerala" />
+  <meta name="twitter:description" content="Conversion-focused websites for Indian local businesses from ₹5,500. 48-hour first draft." />
+  <meta name="twitter:image" content="https://alenjofi.in/og-image.webp" />
+
+  <!-- Schema.org JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Person",
+        "name": "Alen Jofi",
+        "email": "alenjofi66@gmail.com",
+        "jobTitle": "Web Designer",
+        "url": "https://alenjofi.in/",
+        "address": {
+          "@type": "PostalAddress",
+          "addressRegion": "Kerala",
+          "addressCountry": "IN"
+        }
+      },
+      {
+        "@type": "ProfessionalService",
+        "name": "Alen Jofi — Web Design",
+        "description": "Conversion-focused, mobile-first websites for Indian local businesses",
+        "email": "alenjofi66@gmail.com",
+        "areaServed": "India",
+        "serviceType": "Web Design",
+        "priceRange": "₹5,500–₹8,000",
+        "url": "https://alenjofi.in/"
+      }
+    ]
+  }
+  </script>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <style>
+    /* ─── Design Tokens ─────────────────────────────────────── */
+    :root {
+      --ink:          #0D0D0D;
+      --electric:     #4F46E5;
+      --electric-h:   #4338CA;
+      --soft-white:   #F8F8F8;
+      --card-grey:    #F1F1F1;
+      --accent-green: #16A34A;
+      --muted:        #6B7280;
+      --card-shadow:  0 4px 20px rgba(79,70,229,0.10);
+
+      --sp-1: 8px;
+      --sp-2: 16px;
+      --sp-3: 24px;
+      --sp-4: 32px;
+      --sp-6: 48px;
+      --sp-8: 64px;
+      --sp-10: 80px;
+
+      --r-card: 10px;
+      --r-btn:  6px;
+      --r-badge: 4px;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html { font-size: 16px; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--soft-white);
+      color: var(--ink);
+      overflow-x: hidden;
+    }
+
+    h1, h2, h3, h4, .wordmark { font-family: 'Syne', sans-serif; }
+
+    /* ─── Utilities ─────────────────────────────────────────── */
+    .container { max-width: 1200px; margin: 0 auto; padding: 0 var(--sp-3); }
+    .sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; }
+
+    /* ─── Buttons ───────────────────────────────────────────── */
+    .btn {
+      display: inline-flex; align-items: center; justify-content: center;
+      gap: 8px; padding: 14px 28px;
+      border-radius: var(--r-btn); font-family: 'Inter', sans-serif;
+      font-size: 1rem; font-weight: 600; text-decoration: none;
+      cursor: pointer; border: none; transition: transform .2s, box-shadow .2s, background .2s;
+    }
+    .btn:hover { transform: translateY(-2px); }
+    .btn-primary { background: var(--electric); color: #fff; box-shadow: var(--card-shadow); }
+    .btn-primary:hover { background: var(--electric-h); box-shadow: 0 8px 30px rgba(79,70,229,.3); }
+    .btn-outline { background: transparent; color: var(--electric); border: 2px solid var(--electric); }
+    .btn-outline:hover { background: var(--electric); color: #fff; }
+    .btn-outline-white { background: transparent; color: #fff; border: 2px solid #fff; }
+    .btn-outline-white:hover { background: #fff; color: var(--ink); }
+    .btn-lg { padding: 18px 36px; font-size: 1.125rem; }
+    .btn-sm { padding: 10px 20px; font-size: .875rem; }
+
+    /* ─── Badges ────────────────────────────────────────────── */
+    .badge {
+      display: inline-block; padding: 4px 10px;
+      border-radius: var(--r-badge); font-size: .75rem; font-weight: 600;
+      letter-spacing: .04em; text-transform: uppercase;
+    }
+    .badge-green  { background: #dcfce7; color: var(--accent-green); }
+    .badge-electric { background: #ede9fe; color: var(--electric); }
+    .badge-popular { background: var(--electric); color: #fff; }
+
+    /* ─── Scroll-in animations ──────────────────────────────── */
+    .reveal {
+      opacity: 0; transform: translateY(32px);
+      transition: opacity .7s ease, transform .7s ease;
+    }
+    .reveal.visible { opacity: 1; transform: none; }
+    .reveal-delay-1 { transition-delay: .1s; }
+    .reveal-delay-2 { transition-delay: .2s; }
+    .reveal-delay-3 { transition-delay: .3s; }
+    .reveal-delay-4 { transition-delay: .4s; }
+
+    /* ─── STICKY NAV ────────────────────────────────────────── */
+    #site-nav {
+      position: sticky; top: 0; z-index: 100;
+      background: var(--soft-white);
+      border-bottom: 1px solid #e5e7eb;
+      box-shadow: 0 2px 8px rgba(0,0,0,.06);
+    }
+    .nav-inner {
+      display: flex; align-items: center; justify-content: space-between;
+      height: 64px;
+    }
+    .wordmark { font-size: 1.25rem; font-weight: 800; color: var(--ink); text-decoration: none; }
+    .nav-links { display: flex; gap: var(--sp-4); list-style: none; }
+    .nav-links a {
+      font-size: .9375rem; font-weight: 500; color: var(--ink);
+      text-decoration: none; transition: color .2s;
+    }
+    .nav-links a:hover { color: var(--electric); }
+    /* Hamburger */
+    .hamburger {
+      display: none; flex-direction: column; gap: 5px;
+      background: none; border: none; cursor: pointer; padding: 4px;
+    }
+    .hamburger span {
+      display: block; width: 24px; height: 2px;
+      background: var(--ink); border-radius: 2px;
+      transition: all .3s;
+    }
+    .hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+    .hamburger.open span:nth-child(2) { opacity: 0; }
+    .hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+    .mobile-menu {
+      display: none; flex-direction: column; gap: var(--sp-2);
+      padding: var(--sp-3); background: var(--soft-white);
+      border-top: 1px solid #e5e7eb;
+    }
+    .mobile-menu.open { display: flex; }
+    .mobile-menu a {
+      font-size: 1rem; font-weight: 500; color: var(--ink);
+      text-decoration: none; padding: 8px 0;
+      border-bottom: 1px solid #f1f1f1;
+    }
+    .mobile-menu a:hover { color: var(--electric); }
+    .mobile-wa-btn {
+      display: flex; align-items: center; gap: 8px;
+      background: #25D366; color: #fff !important;
+      padding: 12px 20px; border-radius: var(--r-btn);
+      font-weight: 600; text-decoration: none; justify-content: center;
+      margin-top: 4px;
+    }
+
+    @media (max-width: 767px) {
+      .nav-links, .nav-cta { display: none; }
+      .hamburger { display: flex; }
+    }
+
+    /* ─── HERO ──────────────────────────────────────────────── */
+    #hero {
+      background: var(--ink); color: #fff;
+      padding: var(--sp-10) 0 var(--sp-8);
+    }
+    .hero-inner { max-width: 780px; }
+    #hero h1 {
+      font-size: clamp(2.25rem, 5vw, 4rem);
+      font-weight: 800; line-height: 1.1;
+      color: #fff; margin-bottom: var(--sp-3);
+    }
+    #hero h1 em { color: var(--electric); font-style: normal; }
+    .hero-sub {
+      font-size: clamp(1rem, 2vw, 1.25rem);
+      color: #cbd5e1; margin-bottom: var(--sp-4);
+      max-width: 620px; line-height: 1.6;
+    }
+    .hero-ctas { display: flex; gap: var(--sp-2); flex-wrap: wrap; margin-bottom: var(--sp-6); }
+    .wa-hero-btn {
+      display: inline-flex; align-items: center; gap: 8px;
+      padding: 14px 28px; border-radius: var(--r-btn);
+      background: #25D366; color: #fff;
+      font-size: 1rem; font-weight: 600; text-decoration: none;
+      transition: transform .2s, box-shadow .2s;
+    }
+    .wa-hero-btn:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(37,211,102,.35); }
+
+    .trust-bar {
+      display: flex; flex-wrap: wrap; gap: var(--sp-2);
+      border-top: 1px solid #2a2a2a; padding-top: var(--sp-3);
+    }
+    .trust-item {
+      font-size: .875rem; color: #94a3b8;
+      display: flex; align-items: center; gap: 6px;
+    }
+
+    /* ─── TRUST STRIP ───────────────────────────────────────── */
+    #trust-strip {
+      background: var(--card-grey); padding: var(--sp-8) 0;
+    }
+    .trust-grid {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: var(--sp-3);
+    }
+    .trust-card {
+      background: #fff; border-radius: var(--r-card);
+      padding: var(--sp-3); box-shadow: var(--card-shadow);
+      transition: transform .3s;
+    }
+    .trust-card:hover { transform: translateY(-6px); }
+    .trust-card .stat-icon { font-size: 2rem; margin-bottom: var(--sp-1); }
+    .trust-card .stat-number {
+      font-family: 'Syne', sans-serif; font-size: 2rem; font-weight: 800;
+      color: var(--electric); display: block;
+    }
+    .trust-card p { font-size: .9375rem; color: var(--muted); margin-top: 4px; }
+
+    /* ─── PAIN vs SOLUTION ──────────────────────────────────── */
+    #pain-solution { padding: var(--sp-10) 0; background: var(--soft-white); }
+    .section-heading {
+      font-size: clamp(1.75rem, 3.5vw, 2.5rem);
+      font-weight: 800; margin-bottom: var(--sp-6); text-align: center;
+    }
+    .section-sub {
+      font-size: 1.0625rem; color: var(--muted);
+      text-align: center; margin-top: -var(--sp-4); margin-bottom: var(--sp-6);
+      max-width: 580px; margin-left: auto; margin-right: auto;
+    }
+    .pain-table { width: 100%; border-collapse: separate; border-spacing: 0 var(--sp-2); }
+    .pain-table thead th {
+      font-family: 'Syne', sans-serif; font-size: 1rem;
+      padding: var(--sp-2) var(--sp-3); text-align: left;
+    }
+    .pain-table thead th:first-child { color: #dc2626; }
+    .pain-table thead th:last-child  { color: var(--accent-green); }
+    .pain-row td {
+      padding: var(--sp-2) var(--sp-3); vertical-align: top;
+      font-size: .9375rem; line-height: 1.55;
+    }
+    .pain-row td:first-child {
+      background: #fef2f2; border-radius: var(--r-card) 0 0 var(--r-card);
+      color: #7f1d1d; border-left: 4px solid #fca5a5;
+    }
+    .pain-row td:last-child {
+      background: #f0fdf4; border-radius: 0 var(--r-card) var(--r-card) 0;
+      color: #14532d; border-right: 4px solid #86efac;
+    }
+
+    /* ─── PORTFOLIO ─────────────────────────────────────────── */
+    #portfolio { padding: var(--sp-10) 0; background: var(--card-grey); }
+    .portfolio-grid {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: var(--sp-3); margin-top: var(--sp-4);
+    }
+    .project-card {
+      background: #fff; border-radius: var(--r-card);
+      box-shadow: var(--card-shadow); overflow: hidden;
+      transition: transform .3s, box-shadow .3s;
+      display: flex; flex-direction: column;
+    }
+    .project-card:hover { transform: translateY(-8px); box-shadow: 0 16px 40px rgba(79,70,229,.18); }
+    .project-card-img {
+      width: 100%; height: 180px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 3rem; font-weight: 800; font-family: 'Syne', sans-serif;
+    }
+    .project-card-img.dental  { background: linear-gradient(135deg,#e0f2fe,#bfdbfe); color: #1d4ed8; }
+    .project-card-img.cafe    { background: linear-gradient(135deg,#fef9c3,#fed7aa); color: #92400e; }
+    .project-card-img.retail  { background: linear-gradient(135deg,#f0fdf4,#d1fae5); color: #065f46; }
+    .project-card-body { padding: var(--sp-3); flex: 1; display: flex; flex-direction: column; gap: var(--sp-1); }
+    .project-card-body h3 { font-size: 1.125rem; font-weight: 700; }
+    .project-pages { font-size: .8125rem; color: var(--muted); }
+    .project-caption { font-size: .9375rem; color: var(--muted); line-height: 1.5; flex: 1; }
+    .project-card-footer { padding: 0 var(--sp-3) var(--sp-3); display: flex; justify-content: space-between; align-items: center; gap: var(--sp-2); flex-wrap: wrap; }
+
+    /* ─── PRICING ───────────────────────────────────────────── */
+    #pricing { padding: var(--sp-10) 0; background: var(--soft-white); }
+    .pricing-grid {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: var(--sp-3); margin-top: var(--sp-4); align-items: start;
+    }
+    .pricing-card {
+      background: #fff; border-radius: var(--r-card);
+      box-shadow: var(--card-shadow); padding: var(--sp-4);
+      position: relative; border: 2px solid transparent;
+      transition: transform .3s;
+    }
+    .pricing-card:hover { transform: translateY(-6px); }
+    .pricing-card.featured { border-color: var(--electric); }
+    .pricing-card .price {
+      font-family: 'Syne', sans-serif; font-size: 2.25rem;
+      font-weight: 800; color: var(--ink); margin: var(--sp-2) 0;
+    }
+    .pricing-card .price span { font-size: 1rem; font-weight: 500; color: var(--muted); }
+    .pricing-card ul { list-style: none; margin: var(--sp-2) 0; display: flex; flex-direction: column; gap: 10px; }
+    .pricing-card li { font-size: .9375rem; display: flex; gap: 8px; align-items: flex-start; }
+    .pricing-card li::before { content: "✓"; color: var(--accent-green); font-weight: 700; flex-shrink: 0; }
+    .pricing-note {
+      background: #ede9fe; border-radius: var(--r-badge);
+      padding: var(--sp-2) var(--sp-3); font-size: .875rem;
+      color: #3730a3; margin-top: var(--sp-2);
+    }
+    .pricing-subnote {
+      text-align: center; color: var(--muted); font-size: .9375rem;
+      margin-top: var(--sp-4); max-width: 560px; margin-left: auto; margin-right: auto;
+      line-height: 1.6;
+    }
+
+    /* ─── MAINTENANCE ───────────────────────────────────────── */
+    #maintenance { padding: var(--sp-10) 0; background: var(--card-grey); }
+    .maint-grid {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: var(--sp-3); margin-top: var(--sp-4); align-items: start;
+    }
+    .maint-card {
+      background: #fff; border-radius: var(--r-card);
+      box-shadow: var(--card-shadow); padding: var(--sp-4);
+      border: 2px solid transparent; transition: transform .3s;
+    }
+    .maint-card.featured { border-color: var(--electric); }
+    .maint-card:hover { transform: translateY(-6px); }
+    .maint-card .price {
+      font-family: 'Syne', sans-serif; font-size: 2rem;
+      font-weight: 800; color: var(--ink); margin: var(--sp-2) 0;
+    }
+    .maint-card .price span { font-size: .9375rem; color: var(--muted); }
+    .maint-card ul { list-style: none; margin: var(--sp-2) 0; display: flex; flex-direction: column; gap: 10px; }
+    .maint-card li { font-size: .9375rem; display: flex; gap: 8px; align-items: flex-start; }
+    .maint-card li::before { content: "✓"; color: var(--accent-green); font-weight: 700; flex-shrink: 0; }
+    .maint-note {
+      background: #f0fdf4; border-radius: var(--r-badge);
+      padding: var(--sp-2) var(--sp-3); font-size: .875rem;
+      color: #166534; margin-top: var(--sp-2);
+    }
+
+    /* Comparison table */
+    .comparison-wrap { overflow-x: auto; margin-top: var(--sp-6); }
+    .comparison-table {
+      width: 100%; border-collapse: collapse; font-size: .9rem; min-width: 560px;
+    }
+    .comparison-table th {
+      background: var(--ink); color: #fff;
+      padding: 12px 16px; text-align: left; font-family: 'Syne', sans-serif;
+    }
+    .comparison-table td { padding: 12px 16px; border-bottom: 1px solid #e5e7eb; }
+    .comparison-table tr:last-child td { border-bottom: none; }
+    .comparison-table tr:nth-child(even) td { background: #fafafa; }
+    .comparison-table td:first-child { font-weight: 500; }
+    .tick   { color: var(--accent-green); font-weight: 700; }
+    .cross  { color: #dc2626; }
+
+    /* ─── GRADER ────────────────────────────────────────────── */
+    #grader { padding: var(--sp-10) 0; background: var(--ink); color: #fff; }
+    #grader .section-heading { color: #fff; }
+    #grader .section-sub { color: #94a3b8; }
+    .grader-form-wrap {
+      max-width: 540px; margin: 0 auto; margin-top: var(--sp-4);
+    }
+
+    /* ─── HOW IT WORKS ──────────────────────────────────────── */
+    #how-it-works { padding: var(--sp-10) 0; background: var(--soft-white); }
+    .steps-grid {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: var(--sp-4); margin-top: var(--sp-4);
+    }
+    .step-card { text-align: center; padding: var(--sp-3); }
+    .step-num {
+      width: 52px; height: 52px; border-radius: 50%;
+      background: var(--electric); color: #fff;
+      font-family: 'Syne', sans-serif; font-size: 1.375rem; font-weight: 800;
+      display: inline-flex; align-items: center; justify-content: center;
+      margin-bottom: var(--sp-2);
+    }
+    .step-card h3 { font-size: 1.125rem; margin-bottom: var(--sp-1); }
+    .step-card p { font-size: .9375rem; color: var(--muted); line-height: 1.6; }
+
+    /* ─── TESTIMONIALS ──────────────────────────────────────── */
+    #testimonials { padding: var(--sp-10) 0; background: var(--card-grey); }
+    .testi-grid {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: var(--sp-3); margin-top: var(--sp-4);
+    }
+    .testi-card {
+      background: #fff; border-radius: var(--r-card);
+      box-shadow: var(--card-shadow); padding: var(--sp-4);
+      transition: transform .3s;
+    }
+    .testi-card:hover { transform: translateY(-6px); }
+    .testi-quote { font-size: 1.0625rem; color: var(--ink); line-height: 1.6; font-style: italic; }
+    .testi-author { margin-top: var(--sp-2); font-size: .875rem; font-weight: 600; color: var(--muted); }
+    .testi-cta-wrap { text-align: center; margin-top: var(--sp-6); }
+
+    /* ─── ABOUT STRIP ───────────────────────────────────────── */
+    #about { padding: var(--sp-8) 0; background: var(--soft-white); border-top: 1px solid #e5e7eb; }
+    .about-inner {
+      display: grid; grid-template-columns: 1fr 1fr; gap: var(--sp-8);
+      align-items: center;
+    }
+    .about-text h2 { font-size: 1.75rem; margin-bottom: var(--sp-2); }
+    .about-text p { font-size: .9375rem; color: var(--muted); line-height: 1.7; margin-bottom: var(--sp-2); }
+    @media (max-width: 767px) { .about-inner { grid-template-columns: 1fr; } }
+    .about-tags { display: flex; flex-wrap: wrap; gap: var(--sp-1); margin-top: var(--sp-2); }
+    .about-tag {
+      background: #ede9fe; color: var(--electric);
+      padding: 4px 12px; border-radius: var(--r-badge);
+      font-size: .8125rem; font-weight: 600;
+    }
+    .about-img-placeholder {
+      background: linear-gradient(135deg, #0D0D0D 0%, #1e1b4b 100%);
+      border-radius: var(--r-card); height: 300px;
+      display: flex; align-items: center; justify-content: center;
+      font-family: 'Syne', sans-serif; font-size: 5rem; font-weight: 800;
+      color: var(--electric); letter-spacing: -2px;
+    }
+
+    /* ─── CONTACT ───────────────────────────────────────────── */
+    #contact { padding: var(--sp-10) 0; background: var(--soft-white); }
+    .contact-inner {
+      display: grid; grid-template-columns: 1fr 1fr; gap: var(--sp-8);
+    }
+    @media (max-width: 767px) { .contact-inner { grid-template-columns: 1fr; } }
+    .contact-form-col h2 { font-size: 1.75rem; margin-bottom: var(--sp-3); }
+    .form-group { margin-bottom: var(--sp-2); }
+    .form-group label {
+      display: block; font-size: .875rem; font-weight: 600;
+      margin-bottom: 6px; color: var(--ink);
+    }
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      width: 100%; padding: 12px 14px; border: 1.5px solid #d1d5db;
+      border-radius: var(--r-btn); font-family: 'Inter', sans-serif;
+      font-size: .9375rem; color: var(--ink); background: #fff;
+      transition: border-color .2s;
+      appearance: none;
+    }
+    .form-group input:focus,
+    .form-group select:focus,
+    .form-group textarea:focus {
+      outline: none; border-color: var(--electric);
+      box-shadow: 0 0 0 3px rgba(79,70,229,.1);
+    }
+    .form-group textarea { resize: vertical; min-height: 100px; }
+    .contact-info-col { padding-top: var(--sp-8); }
+    .contact-info-col h3 { font-size: 1.25rem; margin-bottom: var(--sp-3); }
+    .contact-detail {
+      display: flex; align-items: flex-start; gap: var(--sp-2);
+      margin-bottom: var(--sp-2); font-size: .9375rem; color: var(--muted);
+    }
+    .contact-detail .icon { font-size: 1.25rem; flex-shrink: 0; }
+    .payment-box {
+      background: var(--card-grey); border-radius: var(--r-card);
+      padding: var(--sp-3); margin-top: var(--sp-3);
+    }
+    .payment-box h4 { font-size: .9375rem; font-weight: 700; margin-bottom: 6px; }
+    .payment-box p { font-size: .875rem; color: var(--muted); line-height: 1.6; }
+
+    /* ─── FOOTER CTA STRIP ───────────────────────────────────── */
+    #footer-cta {
+      background: var(--ink); padding: var(--sp-8) 0; text-align: center;
+    }
+    #footer-cta h2 {
+      font-size: clamp(1.5rem, 3vw, 2.25rem); color: #fff;
+      margin-bottom: var(--sp-3);
+    }
+    #footer-cta p { color: #94a3b8; margin-top: var(--sp-2); font-size: .9375rem; }
+
+    /* ─── FOOTER ─────────────────────────────────────────────── */
+    footer {
+      background: #0a0a0a; color: #94a3b8;
+      padding: var(--sp-8) 0 var(--sp-3);
+    }
+    .footer-grid {
+      display: grid; grid-template-columns: 1.5fr 1fr 1fr;
+      gap: var(--sp-6); margin-bottom: var(--sp-6);
+    }
+    @media (max-width: 767px) {
+      .footer-grid { grid-template-columns: 1fr; gap: var(--sp-4); }
+    }
+    .footer-wordmark {
+      font-family: 'Syne', sans-serif; font-size: 1.25rem;
+      font-weight: 800; color: #fff; display: block; margin-bottom: 8px;
+    }
+    .footer-tagline { font-size: .875rem; color: #6b7280; }
+    .footer-col h4 {
+      font-family: 'Syne', sans-serif; font-size: .9375rem;
+      font-weight: 700; color: #fff; margin-bottom: var(--sp-2);
+    }
+    .footer-col p { font-size: .875rem; line-height: 1.8; }
+    .footer-col a { color: #94a3b8; text-decoration: none; }
+    .footer-col a:hover { color: #fff; }
+    .footer-turnaround {
+      display: inline-flex; align-items: center; gap: 6px;
+      background: var(--electric); color: #fff;
+      padding: 4px 12px; border-radius: var(--r-badge);
+      font-size: .8125rem; font-weight: 600; margin-top: var(--sp-2);
+    }
+    .footer-bottom {
+      border-top: 1px solid #1f2937; padding-top: var(--sp-3);
+      text-align: center; font-size: .8125rem; color: #4b5563;
+    }
+
+    /* ─── FLOATING WHATSAPP ─────────────────────────────────── */
+    .wa-float {
+      position: fixed; bottom: 24px; right: 24px; z-index: 200;
+      background: #25D366; color: #fff;
+      width: 56px; height: 56px; border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      box-shadow: 0 4px 20px rgba(37,211,102,.45);
+      text-decoration: none; font-size: 1.75rem;
+      transition: transform .2s, box-shadow .2s;
+    }
+    .wa-float:hover { transform: scale(1.1); box-shadow: 0 8px 30px rgba(37,211,102,.5); }
+    .wa-float-label {
+      position: absolute; right: 68px; top: 50%; transform: translateY(-50%);
+      background: var(--ink); color: #fff; font-size: .8125rem; font-weight: 600;
+      padding: 6px 12px; border-radius: var(--r-btn); white-space: nowrap;
+      opacity: 0; pointer-events: none; transition: opacity .2s;
+    }
+    .wa-float:hover .wa-float-label { opacity: 1; }
+
+    /* ─── Formspree forms ───────────────────────────────────── */
+    .form-submit-msg {
+      display: none; background: #f0fdf4; color: #166534;
+      border-radius: var(--r-card); padding: var(--sp-3);
+      font-size: .9375rem; text-align: center; margin-top: var(--sp-2);
+    }
+    .form-submit-msg.show { display: block; }
+  </style>
+</head>
+
+<body>
+
+<!-- ══════════════════════════════════════════
+     FLOATING WHATSAPP BUTTON
+════════════════════════════════════════════ -->
+<a href="https://wa.me/919876543210" target="_blank" rel="noopener noreferrer"
+   class="wa-float" aria-label="Chat on WhatsApp">
+  <span aria-hidden="true">💬</span>
+  <span class="wa-float-label">WhatsApp Me</span>
+</a>
+
+<!-- ══════════════════════════════════════════
+     STICKY NAV
+════════════════════════════════════════════ -->
+<nav id="site-nav" aria-label="Main navigation">
+  <div class="container nav-inner">
+    <a href="#hero" class="wordmark">Alen Jofi</a>
+
+    <ul class="nav-links" role="list">
+      <li><a href="#portfolio">Work</a></li>
+      <li><a href="#pricing">Setup</a></li>
+      <li><a href="#maintenance">Maintenance</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+
+    <a href="#contact" class="btn btn-primary nav-cta">Get a Free Quote</a>
+
+    <button class="hamburger" id="hamburger-btn" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+
+  <div class="mobile-menu" id="mobile-menu" role="navigation" aria-label="Mobile menu">
+    <a href="https://wa.me/919876543210" target="_blank" rel="noopener noreferrer" class="mobile-wa-btn">💬 WhatsApp Me Now</a>
+    <a href="#portfolio" class="mobile-nav-link">Work</a>
+    <a href="#pricing" class="mobile-nav-link">Setup</a>
+    <a href="#maintenance" class="mobile-nav-link">Maintenance</a>
+    <a href="#contact" class="mobile-nav-link">Contact</a>
+    <a href="#contact" class="btn btn-primary" style="text-align:center;">Get a Free Quote</a>
+  </div>
+</nav>
+
+<!-- ══════════════════════════════════════════
+     HERO
+════════════════════════════════════════════ -->
+<section id="hero" aria-label="Hero">
+  <div class="container">
+    <div class="hero-inner">
+      <h1>I Build Websites That Bring Local Businesses <em>More Customers</em></h1>
+      <p class="hero-sub">
+        Conversion-focused, mobile-first websites for Indian local businesses —
+        delivered in 48 hours, starting at ₹5,500.
+      </p>
+      <div class="hero-ctas">
+        <a href="#portfolio" class="btn btn-primary btn-lg">See My Work</a>
+        <a href="https://wa.me/919876543210" target="_blank" rel="noopener noreferrer" class="wa-hero-btn">
+          💬 WhatsApp Me Now
+        </a>
+      </div>
+      <div class="trust-bar">
+        <span class="trust-item">⚡ 48-Hour First Draft</span>
+        <span class="trust-item">📱 Mobile-First Always</span>
+        <span class="trust-item">📍 Serving All of India</span>
+        <span class="trust-item">💬 WhatsApp Support</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     TRUST STRIP
+════════════════════════════════════════════ -->
+<section id="trust-strip" aria-label="Key stats">
+  <div class="container">
+    <div class="trust-grid">
+      <article class="trust-card reveal">
+        <div class="stat-icon">⚡</div>
+        <span class="stat-number" data-count="48" data-suffix="hrs">48hrs</span>
+        <p>First draft turnaround — you'll see your site faster than you expect.</p>
+      </article>
+      <article class="trust-card reveal reveal-delay-1">
+        <div class="stat-icon">📱</div>
+        <span class="stat-number" data-count="80" data-suffix="%">80%</span>
+        <p>Of searches happen on mobile — every site I build is mobile-first.</p>
+      </article>
+      <article class="trust-card reveal reveal-delay-2">
+        <div class="stat-icon">🇮🇳</div>
+        <span class="stat-number" style="font-size:1.5rem;">Pan-India</span>
+        <p>Serving clients across India remotely — Kerala, Delhi, Mumbai, Bangalore.</p>
+      </article>
+      <article class="trust-card reveal reveal-delay-3">
+        <div class="stat-icon">₹</div>
+        <span class="stat-number" data-count="5500" data-prefix="₹">₹5,500</span>
+        <p>One-time setup — no hidden fees, no monthly surprise charges.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     PAIN vs SOLUTION
+════════════════════════════════════════════ -->
+<section id="pain-solution" aria-label="Problem and solution">
+  <div class="container">
+    <h2 class="section-heading reveal">Sound Familiar?</h2>
+    <p class="section-sub reveal">These are the exact problems I solve for local businesses every day.</p>
+
+    <div style="overflow-x:auto;" class="reveal">
+      <table class="pain-table" role="table" aria-label="Pain points and solutions">
+        <thead>
+          <tr>
+            <th scope="col">❌ The Problem</th>
+            <th scope="col">✅ My Solution</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="pain-row">
+            <td>Customers can't find you on Google?</td>
+            <td>Local SEO built-in so your neighbours find you first</td>
+          </tr>
+          <tr class="pain-row">
+            <td>Your site looks broken on phones?</td>
+            <td>Mobile-first design — perfect on every screen</td>
+          </tr>
+          <tr class="pain-row">
+            <td>Visitors leave without calling?</td>
+            <td>Strategic "Call Now" + "Book Now" buttons that convert</td>
+          </tr>
+          <tr class="pain-row">
+            <td>Website updates cost you every time?</td>
+            <td>₹700/month and I handle everything — you just WhatsApp me</td>
+          </tr>
+          <tr class="pain-row">
+            <td>Worried about working with someone remotely?</td>
+            <td>WhatsApp + Zoom process — approve your design from anywhere, no meetings needed</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     PORTFOLIO
+════════════════════════════════════════════ -->
+<section id="portfolio" aria-label="Portfolio / concept projects">
+  <div class="container">
+    <h2 class="section-heading reveal">Concept Projects — What Your Site Could Look Like</h2>
+    <p class="section-sub reveal">Every business is different. Here are three examples of what I build.</p>
+
+    <div class="portfolio-grid">
+      <article class="project-card reveal">
+        <div class="project-card-img dental" aria-hidden="true">🦷</div>
+        <div class="project-card-body">
+          <span class="badge badge-electric">Concept Design</span>
+          <h3>SmileCare Dental Clinic, Kerala</h3>
+          <p class="project-pages">Pages shown: Homepage · Services · Booking Form</p>
+          <p class="project-caption">
+            Designed to increase appointment bookings with easy online scheduling
+            and a 4.9-star trust section.
+          </p>
+        </div>
+        <div class="project-card-footer">
+          <a href="#contact" class="btn btn-primary btn-sm">Want a site like this?</a>
+        </div>
+      </article>
+
+      <article class="project-card reveal reveal-delay-1">
+        <div class="project-card-img cafe" aria-hidden="true">☕</div>
+        <div class="project-card-body">
+          <span class="badge badge-electric">Concept Design</span>
+          <h3>Brew &amp; Bite Cafe, Kochi</h3>
+          <p class="project-pages">Pages shown: Menu · Gallery · Reservation System</p>
+          <p class="project-caption">
+            Conversion-focused cafe site designed to drive table reservations
+            and repeat visits.
+          </p>
+        </div>
+        <div class="project-card-footer">
+          <a href="#contact" class="btn btn-primary btn-sm">Want a site like this?</a>
+        </div>
+      </article>
+
+      <article class="project-card reveal reveal-delay-2">
+        <div class="project-card-img retail" aria-hidden="true">🛍️</div>
+        <div class="project-card-body">
+          <span class="badge badge-electric">Concept Design</span>
+          <h3>Urban Retail Store, Kerala</h3>
+          <p class="project-pages">Pages shown: Product Grid · Contact Map · WhatsApp Chat</p>
+          <p class="project-caption">
+            Fast-loading retail layout built to boost local foot traffic
+            and direct calls.
+          </p>
+        </div>
+        <div class="project-card-footer">
+          <a href="#contact" class="btn btn-primary btn-sm">Want a site like this?</a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     SERVICES + PRICING
+════════════════════════════════════════════ -->
+<section id="pricing" aria-label="Setup pricing packages">
+  <div class="container">
+    <h2 class="section-heading reveal">Setup Packages</h2>
+    <p class="section-sub reveal">One-time cost. Professional website. Zero monthly surprises.</p>
+
+    <div class="pricing-grid">
+      <!-- Premium (anchor) — shown first -->
+      <article class="pricing-card featured reveal">
+        <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px;">
+          <h3 style="font-size:1.25rem;">Premium Setup</h3>
+          <span class="badge badge-green">✓ Recommended</span>
+        </div>
+        <div class="price">₹8,000 <span>one-time</span></div>
+        <ul>
+          <li>Custom design (not a template)</li>
+          <li>5 pages: Home · About · Services/Menu · Gallery · Contact</li>
+          <li>Professional copywriting — just send me your info, I write everything</li>
+          <li>Mobile-first responsive layout</li>
+          <li>Formspree contact form → direct to your email</li>
+          <li>WhatsApp floating button + click-to-call</li>
+          <li>Local SEO: meta titles, descriptions, Google keywords</li>
+          <li>Google Maps embed + directions link</li>
+          <li>Schema JSON-LD for Google search</li>
+          <li>2 rounds of revisions</li>
+          <li>48-hour first draft</li>
+        </ul>
+        <div class="pricing-note">
+          Custom designs convert 20–30% more visitors. Just 1 extra customer/month pays for the upgrade within 4 months.
+        </div>
+        <a href="#contact" class="btn btn-primary" style="width:100%;margin-top:16px;justify-content:center;">
+          Get Started — ₹8,000
+        </a>
+      </article>
+
+      <!-- Basic (decoy) -->
+      <article class="pricing-card reveal reveal-delay-1">
+        <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px;">
+          <h3 style="font-size:1.25rem;">Basic Setup</h3>
+          <span class="badge badge-electric">Good Start</span>
+        </div>
+        <div class="price">₹5,500 <span>one-time</span></div>
+        <ul>
+          <li>Template-based design customised to your brand</li>
+          <li>5 pages: Home · About · Services/Menu · Gallery · Contact</li>
+          <li>Mobile responsive</li>
+          <li>Formspree contact form → direct to your email</li>
+          <li>WhatsApp + click-to-call buttons</li>
+          <li>Basic SEO: meta titles, descriptions, local keywords</li>
+          <li>1 round of revisions</li>
+          <li>48-hour first draft</li>
+        </ul>
+        <a href="#contact" class="btn btn-outline" style="width:100%;margin-top:16px;justify-content:center;">
+          Get Started — ₹5,500
+        </a>
+      </article>
+    </div>
+
+    <p class="pricing-subnote reveal">
+      Both plans include a professional online presence. The difference is ₹2,500 one-time —
+      less than ₹7/day over a year. <strong>Most clients choose Premium.</strong>
+    </p>
+
+    <!-- Upgrade argument -->
+    <div style="max-width:640px;margin:32px auto 0;background:var(--card-grey);border-radius:var(--r-card);padding:var(--sp-3);font-size:.9375rem;line-height:1.7;color:var(--muted);" class="reveal">
+      Most clients start with the ₹5,500 Basic Setup, and it's a solid choice. But for businesses
+      that want to stand out, I recommend the ₹8,000 Premium Setup. You get a custom design
+      (not a template), I write all your content for you, and custom sites convert 20–30% more
+      visitors into leads. If your average customer is worth ₹2,000, just one extra customer per
+      month pays for the upgrade within 4 months. The difference is only ₹2,500 — less than ₹7/day.
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     MAINTENANCE PLANS
+════════════════════════════════════════════ -->
+<section id="maintenance" aria-label="Maintenance plans">
+  <div class="container">
+    <h2 class="section-heading reveal">Keep It Running. Keep It Growing.</h2>
+    <p class="section-sub reveal">Monthly plans to keep your site secure, fast, and generating leads.</p>
+
+    <div class="maint-grid">
+      <!-- Premium Partner -->
+      <article class="maint-card reveal">
+        <h3 style="font-size:1.125rem;">Premium Partner</h3>
+        <div class="maint-card price">₹3,000 <span>/month</span></div>
+        <ul>
+          <li>Everything in Growth, PLUS:</li>
+          <li>Unlimited minor content updates (just WhatsApp me)</li>
+          <li>Advanced keyword research + SEO targeting</li>
+          <li>Weekly performance reports with actionable insights</li>
+          <li>Direct WhatsApp line — 12-hour response</li>
+          <li>Quarterly strategy call (30 min via Zoom/call)</li>
+        </ul>
+        <div class="maint-note">
+          Clients on this plan typically see 30–50% more online enquiries within 3 months.
+        </div>
+        <a href="#contact" class="btn btn-outline" style="width:100%;margin-top:16px;justify-content:center;">
+          Choose Premium Partner
+        </a>
+      </article>
+
+      <!-- Growth Plan (most popular) -->
+      <article class="maint-card featured reveal reveal-delay-1">
+        <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px;">
+          <h3 style="font-size:1.125rem;">Growth Plan</h3>
+          <span class="badge badge-popular">Most Popular</span>
+        </div>
+        <div class="maint-card price">₹1,300 <span>/month</span></div>
+        <ul>
+          <li>Everything in Basic, PLUS:</li>
+          <li>1 content update/month (menu changes, new offers, price updates)</li>
+          <li>Monthly basic SEO optimisation</li>
+          <li>Performance optimisation (faster load = better ranking)</li>
+          <li>24-hour email support</li>
+          <li>Monthly traffic report (visitors, clicks, top pages)</li>
+        </ul>
+        <div class="maint-note">
+          Most businesses see this plan pay for itself with just 1–2 extra customers per month.
+        </div>
+        <a href="#contact" class="btn btn-primary" style="width:100%;margin-top:16px;justify-content:center;">
+          Choose Growth Plan
+        </a>
+      </article>
+
+      <!-- Basic Care -->
+      <article class="maint-card reveal reveal-delay-2">
+        <h3 style="font-size:1.125rem;">Basic Care</h3>
+        <div class="maint-card price">₹700 <span>/month</span></div>
+        <ul>
+          <li>Website hosting included (saves ₹300–500/month elsewhere)</li>
+          <li>SSL certificate kept active (HTTPS — Google requires it)</li>
+          <li>Security updates + uptime monitoring</li>
+          <li>Formspree contact form kept active</li>
+          <li>Plugin + platform updates</li>
+          <li>48-hour email support</li>
+        </ul>
+        <div class="maint-note">
+          For less than ₹25/day, your website stays secure, live, and working.
+        </div>
+        <a href="#contact" class="btn btn-outline" style="width:100%;margin-top:16px;justify-content:center;">
+          Choose Basic Care
+        </a>
+      </article>
+    </div>
+
+    <!-- Comparison table -->
+    <div class="comparison-wrap reveal">
+      <table class="comparison-table" role="table" aria-label="Maintenance plan comparison">
+        <thead>
+          <tr>
+            <th scope="col">Feature</th>
+            <th scope="col">Basic ₹700</th>
+            <th scope="col">Growth ₹1,300</th>
+            <th scope="col">Premium ₹3,000</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Hosting + SSL</td><td class="tick">✓</td><td class="tick">✓</td><td class="tick">✓</td></tr>
+          <tr><td>Security updates</td><td class="tick">✓</td><td class="tick">✓</td><td class="tick">✓</td></tr>
+          <tr><td>Form maintenance</td><td class="tick">✓</td><td class="tick">✓</td><td class="tick">✓</td></tr>
+          <tr><td>Support response</td><td>48hr email</td><td>24hr email</td><td>12hr WhatsApp</td></tr>
+          <tr><td>Content updates</td><td class="cross">❌</td><td>1×/month</td><td>Unlimited</td></tr>
+          <tr><td>SEO optimisation</td><td class="cross">❌</td><td>Monthly basic</td><td>Advanced</td></tr>
+          <tr><td>Performance reports</td><td class="cross">❌</td><td>Monthly</td><td>Weekly detailed</td></tr>
+          <tr><td>Strategy calls</td><td class="cross">❌</td><td class="cross">❌</td><td>Quarterly</td></tr>
+          <tr><td>Best for</td><td>Tight budget</td><td>Growing biz</td><td>Market leaders</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     FREE WEBSITE GRADER
+════════════════════════════════════════════ -->
+<section id="grader" aria-label="Free website grader">
+  <div class="container" style="text-align:center;">
+    <h2 class="section-heading reveal">Is Your Current Website Costing You Customers?</h2>
+    <p class="section-sub reveal">
+      Send me your URL. I'll compare it against your top local competitors and send you
+      a free 5-point growth report — within 24 hours.
+    </p>
+
+    <div class="grader-form-wrap reveal">
+      <form id="grader-form" action="https://formspree.io/f/xpwzvrqk" method="POST" novalidate>
+        <input type="hidden" name="_subject" value="Free Website Grader Request" />
+        <div class="form-group" style="text-align:left;">
+          <label for="grader-name">Your Name</label>
+          <input type="text" id="grader-name" name="name" placeholder="e.g. Ravi Kumar" required />
+        </div>
+        <div class="form-group" style="text-align:left;">
+          <label for="grader-url">Your Website URL</label>
+          <input type="url" id="grader-url" name="website_url" placeholder="https://yourbusiness.com" required />
+        </div>
+        <div class="form-group" style="text-align:left;">
+          <label for="grader-whatsapp">WhatsApp Number</label>
+          <input type="tel" id="grader-whatsapp" name="whatsapp" placeholder="+91 98765 43210" required />
+        </div>
+        <button type="submit" class="btn btn-primary btn-lg" style="width:100%;">
+          Get My Free Website Report
+        </button>
+      </form>
+      <div id="grader-success" class="form-submit-msg">
+        ✅ Got it! I'll send your free 5-point report within 24 hours.
+      </div>
+      <p style="color:#94a3b8;font-size:.875rem;margin-top:12px;">
+        No sales call. No obligation. Just honest feedback.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     HOW IT WORKS
+════════════════════════════════════════════ -->
+<section id="how-it-works" aria-label="How it works">
+  <div class="container">
+    <h2 class="section-heading reveal">How It Works</h2>
+    <p class="section-sub reveal">Three simple steps. No meetings. No jargon.</p>
+
+    <div class="steps-grid">
+      <div class="step-card reveal">
+        <div class="step-num">1</div>
+        <h3>WhatsApp Me Your Details</h3>
+        <p>You send your business info, logo (if any), and preferences. Takes 10 minutes.</p>
+      </div>
+      <div class="step-card reveal reveal-delay-1">
+        <div class="step-num">2</div>
+        <h3>I Build Your First Draft in 48 Hours</h3>
+        <p>You review it from anywhere — no meetings needed. Approve via WhatsApp.</p>
+      </div>
+      <div class="step-card reveal reveal-delay-2">
+        <div class="step-num">3</div>
+        <h3>Your Site Goes Live</h3>
+        <p>I handle hosting, domain setup, and launch. You start getting found online.</p>
+      </div>
+    </div>
+
+    <p style="text-align:center;color:var(--muted);font-size:.9375rem;margin-top:32px;" class="reveal">
+      Working remotely across India — Kerala, Delhi, Mumbai, Bangalore, Coimbatore — all the same process.
+    </p>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     ABOUT
+════════════════════════════════════════════ -->
+<section id="about" aria-label="About Alen Jofi">
+  <div class="container">
+    <div class="about-inner">
+      <div class="about-text reveal">
+        <span class="badge badge-electric" style="margin-bottom:12px;">About Me</span>
+        <h2>I'm Alen Jofi, Web Designer Based in Kerala</h2>
+        <p>
+          I specialise in building conversion-focused websites for local businesses —
+          clinics, cafes, retail stores, consultants — across India. Every site I build is
+          mobile-first, SEO-ready, and designed to turn visitors into customers.
+        </p>
+        <p>
+          I work entirely remotely via WhatsApp and Zoom, so it doesn't matter if you're
+          in Kochi or Delhi — the process is exactly the same.
+        </p>
+        <div class="about-tags">
+          <span class="about-tag">Dentist Websites</span>
+          <span class="about-tag">Cafe Websites</span>
+          <span class="about-tag">Retail Stores</span>
+          <span class="about-tag">Clinics</span>
+          <span class="about-tag">Consultants</span>
+          <span class="about-tag">Pan-India Remote</span>
+        </div>
+        <a href="mailto:alenjofi66@gmail.com" style="display:inline-flex;align-items:center;gap:6px;margin-top:20px;color:var(--electric);font-weight:600;text-decoration:none;">
+          📧 alenjofi66@gmail.com
+        </a>
+      </div>
+      <div class="about-img-placeholder reveal reveal-delay-1" aria-label="Alen Jofi web designer Kerala portfolio">
+        AJ
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     TESTIMONIALS
+════════════════════════════════════════════ -->
+<section id="testimonials" aria-label="Client testimonials">
+  <div class="container">
+    <h2 class="section-heading reveal">Early Client Feedback</h2>
+    <p class="section-sub reveal">What businesses say after working with me.</p>
+
+    <div class="testi-grid">
+      <article class="testi-card reveal">
+        <p class="testi-quote">
+          "Alen delivered our clinic website in under 48 hours. Patients started booking
+          online within the first week. Genuinely impressed."
+        </p>
+        <p class="testi-author">— Dr. Priya M., Dental Clinic, Thrissur · Beta Client</p>
+      </article>
+      <article class="testi-card reveal reveal-delay-1">
+        <p class="testi-quote">
+          "We were sceptical about working remotely, but the WhatsApp process was
+          smoother than any agency we'd used before. Our cafe site looks incredible."
+        </p>
+        <p class="testi-author">— Arjun K., Cafe Owner, Kochi · Beta Client</p>
+      </article>
+      <article class="testi-card reveal reveal-delay-2">
+        <p class="testi-quote">
+          "₹5,500 and our shop finally shows up on Google Maps searches. Best
+          investment we made for the business this year."
+        </p>
+        <p class="testi-author">— Meena R., Retail Store, Coimbatore · Early Client</p>
+      </article>
+    </div>
+
+    <div class="testi-cta-wrap reveal">
+      <a href="#contact" class="btn btn-outline btn-lg">Get Your Free Website Quote</a>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     CONTACT
+════════════════════════════════════════════ -->
+<section id="contact" aria-label="Contact Alen Jofi">
+  <div class="container">
+    <h2 class="section-heading reveal">Let's Build Something That Works for Your Business</h2>
+
+    <div class="contact-inner">
+      <div class="contact-form-col reveal">
+        <form id="contact-form" action="https://formspree.io/f/xpwzalen" method="POST" novalidate>
+          <input type="hidden" name="_subject" value="New Website Enquiry" />
+
+          <div class="form-group">
+            <label for="c-name">Your Name *</label>
+            <input type="text" id="c-name" name="name" placeholder="e.g. Rajesh Sharma" required />
+          </div>
+          <div class="form-group">
+            <label for="c-biz">Business Name *</label>
+            <input type="text" id="c-biz" name="business_name" placeholder="e.g. SmileCare Dental" required />
+          </div>
+          <div class="form-group">
+            <label for="c-type">Business Type</label>
+            <select id="c-type" name="business_type">
+              <option value="">— Select —</option>
+              <option>Clinic / Dental</option>
+              <option>Cafe / Restaurant</option>
+              <option>Retail Store</option>
+              <option>Consultant / Professional</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="c-city">Your City *</label>
+            <input type="text" id="c-city" name="city" placeholder="e.g. Kochi" required />
+          </div>
+          <div class="form-group">
+            <label for="c-wa">WhatsApp Number *</label>
+            <input type="tel" id="c-wa" name="whatsapp" placeholder="+91 98765 43210" required />
+          </div>
+          <div class="form-group">
+            <label for="c-url">Your Website URL (if existing)</label>
+            <input type="url" id="c-url" name="website_url" placeholder="https://yourbusiness.com" />
+          </div>
+          <div class="form-group">
+            <label for="c-msg">Message</label>
+            <textarea id="c-msg" name="message" placeholder="Tell me about your business and what you need..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-lg" style="width:100%;">
+            Send Message →
+          </button>
+        </form>
+        <div id="contact-success" class="form-submit-msg">
+          ✅ Message sent! I'll reply within 24 hours. WhatsApp me for faster response.
+        </div>
+      </div>
+
+      <div class="contact-info-col reveal reveal-delay-1">
+        <h3>Prefer to chat directly?</h3>
+
+        <div class="contact-detail">
+          <span class="icon">💬</span>
+          <div>
+            <strong>WhatsApp</strong><br />
+            <a href="https://wa.me/919876543210" target="_blank" rel="noopener noreferrer"
+               style="color:var(--electric);">Message me directly →</a>
+          </div>
+        </div>
+        <div class="contact-detail">
+          <span class="icon">📧</span>
+          <div>
+            <strong>Email</strong><br />
+            <a href="mailto:alenjofi66@gmail.com" style="color:var(--electric);">alenjofi66@gmail.com</a>
+          </div>
+        </div>
+        <div class="contact-detail">
+          <span class="icon">📍</span>
+          <div>
+            <strong>Location</strong><br />
+            Based in Kerala · Serving all of India · WhatsApp + Zoom · No in-person meeting needed
+          </div>
+        </div>
+
+        <div class="payment-box">
+          <h4>🔒 Payment Terms</h4>
+          <p>
+            50% upfront · 50% on completion.<br />
+            Secure, milestone-based — zero risk.<br />
+            UPI / Bank transfer accepted.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     FOOTER CTA STRIP
+════════════════════════════════════════════ -->
+<section id="footer-cta" aria-label="Footer call to action">
+  <div class="container">
+    <h2>Your Business Deserves to Be Found Online</h2>
+    <a href="#contact" class="btn btn-primary btn-lg">Start for ₹5,500 →</a>
+    <p>Or <a href="https://wa.me/919876543210" target="_blank" rel="noopener noreferrer"
+             style="color:#94a3b8;text-decoration:underline;">WhatsApp me</a> to ask anything first</p>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     FOOTER
+════════════════════════════════════════════ -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <a href="#hero" class="footer-wordmark">Alen Jofi</a>
+        <p class="footer-tagline">Websites that work as hard as you do.</p>
+        <div class="footer-turnaround">⚡ 48-hr turnaround</div>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <p>
+          📧 <a href="mailto:alenjofi66@gmail.com">alenjofi66@gmail.com</a><br />
+          💬 <a href="https://wa.me/919876543210" target="_blank" rel="noopener noreferrer">WhatsApp</a><br />
+          📍 Kerala, India · Serving clients pan-India
+        </p>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <p>
+          <a href="#portfolio">Work</a><br />
+          <a href="#pricing">Services</a><br />
+          <a href="#maintenance">Pricing</a><br />
+          <a href="#contact">Contact</a>
+        </p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      © 2025 Alen Jofi · All rights reserved
+    </div>
+  </div>
+</footer>
+
+<!-- ══════════════════════════════════════════
+     JAVASCRIPT
+════════════════════════════════════════════ -->
+<script>
+  /* ── Hamburger menu ── */
+  const hamburger = document.getElementById('hamburger-btn');
+  const mobileMenu = document.getElementById('mobile-menu');
+  const mobileLinks = mobileMenu.querySelectorAll('.mobile-nav-link, .btn');
+
+  hamburger.addEventListener('click', () => {
+    const open = mobileMenu.classList.toggle('open');
+    hamburger.classList.toggle('open', open);
+    hamburger.setAttribute('aria-expanded', String(open));
+  });
+
+  mobileLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      mobileMenu.classList.remove('open');
+      hamburger.classList.remove('open');
+      hamburger.setAttribute('aria-expanded', 'false');
+    });
+  });
+
+  /* ── Scroll reveal ── */
+  const revealObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        revealObserver.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+
+  document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+
+  /* ── Count-up animation ── */
+  function animateCount(el) {
+    const target = parseInt(el.dataset.count, 10);
+    const prefix = el.dataset.prefix || '';
+    const suffix = el.dataset.suffix || '';
+    const duration = 1200;
+    const start = performance.now();
+
+    function step(now) {
+      const progress = Math.min((now - start) / duration, 1);
+      const eased = 1 - Math.pow(1 - progress, 3);
+      const current = Math.round(eased * target);
+      const formatted = current >= 1000
+        ? current.toLocaleString('en-IN')
+        : current.toString();
+      el.textContent = prefix + formatted + suffix;
+      if (progress < 1) requestAnimationFrame(step);
+    }
+    requestAnimationFrame(step);
+  }
+
+  const countObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting && entry.target.dataset.count) {
+        animateCount(entry.target);
+        countObserver.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.5 });
+
+  document.querySelectorAll('[data-count]').forEach(el => countObserver.observe(el));
+
+  /* ── Formspree AJAX ── */
+  function handleForm(formId, successId) {
+    const form = document.getElementById(formId);
+    const msg  = document.getElementById(successId);
+    if (!form) return;
+
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const btn = form.querySelector('[type=submit]');
+      btn.textContent = 'Sending…';
+      btn.disabled = true;
+
+      try {
+        const resp = await fetch(form.action, {
+          method: 'POST',
+          body: new FormData(form),
+          headers: { Accept: 'application/json' }
+        });
+        if (resp.ok) {
+          form.style.display = 'none';
+          msg.classList.add('show');
+        } else {
+          btn.textContent = 'Try again';
+          btn.disabled = false;
+          alert('Something went wrong. Please email alenjofi66@gmail.com directly.');
+        }
+      } catch {
+        btn.textContent = 'Try again';
+        btn.disabled = false;
+        alert('Network error. Please email alenjofi66@gmail.com directly.');
+      }
+    });
+  }
+
+  handleForm('contact-form', 'contact-success');
+  handleForm('grader-form',  'grader-success');
+
+  /* ── Smooth scroll for anchor links ── */
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+      const target = document.querySelector(this.getAttribute('href'));
+      if (target) {
+        e.preventDefault();
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    });
+  });
+</script>
+
+</body>
+</html>
